@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/59b99fbf87.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -13,32 +14,38 @@
 </head>
 <body>
   <main>
-    <section>
-      <img src="./images/logo.svg" alt="PING" />
-      <h1>We are launching soon!</h1>
-      <p>Subscribe to get notified</p>
-      <form>
-        <label for="email">
-          <input id="email" type="email" placeholder="Your email address..." />
+    <section class="coming-soon__section">
+      <img class="coming-soon__logo" src="./images/logo.svg" alt="PING" />
+      <h1 class="coming-soon__headline">We are launching <span class="bold">soon!</span></h1>
+      <p class="coming-soon__copy">Subscribe to get notified</p>
+      <form class="coming-soon__form">
+        <label class="coming-soon__form-label" for="email">
+          <input class="coming-soon__form-input" id="email" type="email" placeholder="Your email address..." />
         </label>
-        <button type="submit">Notify Me</button>
+        <button class="coming-soon__btn-submit" type="submit">Notify Me</button>
       </form>
-      <img src="./images/illustration-dashboard.png" alt="" />
+      <img class="coming-soon__image-placeholder" src="./images/illustration-dashboard.png" alt="" />
     </section>
   </main>
-  <footer>
-    <ul>
-      <li>
-        <a href="" target="_blank"></a>
+  <footer class="coming-soon__footer">
+    <ul class="coming-soon__list">
+      <li class="coming-soon__list-item">
+        <a href="" target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
       </li>
-      <li>
-        <a href="" target="_blank"></a>
+      <li class="coming-soon__list-item">
+        <a href="" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
       </li>
-      <li>
-        <a href="" target="_blank"></a>
+      <li class="coming-soon__list-item">
+        <a href="" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
       </li>
     </ul>
-    <p>&copy; Copyright Ping. All rights reserved.</p>
+    <p class="coming-soon__copyright">&copy; Copyright Ping. All rights reserved.</p>
   </footer>
 </body>
 </html>
