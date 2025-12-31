@@ -19,9 +19,12 @@
       <h1 class="coming-soon__headline">We are launching <span class="bold">soon!</span></h1>
       <p class="coming-soon__copy">Subscribe to get notified</p>
       <form class="coming-soon__form">
-        <label class="coming-soon__form-label" for="email">
-          <input class="coming-soon__form-input" id="email" type="email" placeholder="Your email address..." />
-        </label>
+        <div class="coming-soon__form-input-wrapper">
+          <label class="coming-soon__form-label" for="email">
+            <input class="coming-soon__form-input" id="email" type="email" placeholder="Your email address..." aria-describedby="emailError" />
+          </label>
+          <span class="coming-soon__form-error" id="emailError">Please provide a valid email address</span>
+        </div>
         <button class="coming-soon__btn-submit" type="submit">Notify Me</button>
       </form>
       <img class="coming-soon__image-placeholder" src="./images/illustration-dashboard.png" alt="" />
