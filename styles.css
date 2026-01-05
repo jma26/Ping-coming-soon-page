@@ -64,6 +64,8 @@ main {
   --blue-950: hsl(209, 33%, 12%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(100, 100%, 100%);
+  --shadow-primary-sm: 0 10px 20px hsl(223 87% 63% / 0.15);
+  --shadow-primary-lg: 0 4px 8px hsl(223 87% 63% / 0.25);
 }
 
 .coming-soon__section {
@@ -116,6 +118,10 @@ main {
   width: 100%;
 }
 
+.coming-soon__form-input-wrapper.error .coming-soon__form-input {
+  border-color: var(--red-400);
+}
+
 .coming-soon__form-label {
   width: 100%;
 }
@@ -146,6 +152,7 @@ main {
   background-color: var(--blue-500);
   border-radius: 2rem;
   border: 1px solid var(--blue-500);
+  box-shadow: var(--shadow-primary-sm), var(--shadow-primary-lg);
   color: var(--white);
   cursor: pointer;
   font-size: clamp(0.5rem, 0.4135rem + 1.527vw, 1rem);
